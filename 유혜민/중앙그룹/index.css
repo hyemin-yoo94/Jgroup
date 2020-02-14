@@ -1,0 +1,595 @@
+/* 폰트적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노멀라이즈 */
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+/* 커스텀 */
+body {
+    background-color:#FFFFFF;
+}
+
+/* 메인 페이지 */
+.main-page {
+    width: 416px;
+    padding-top: 50px;
+    position: relative;
+}
+
+/* 메인 페이지 - 키 텍스트 */
+.main-page > .key-text {
+    display: block;
+    font-size: 94px;
+    font-weight: bold;
+    line-height: 134px;
+    padding-top: 102px;
+    margin-bottom: 60px;
+    white-space: nowrap;
+}
+
+/* 메인 페이지 - 키 텍스트1 */
+
+.main-page > .key-text-1 {
+    font-size: 56px;
+    line-height:84px;
+}
+
+/* 메인 페이지 - 키 텍스트4 */
+.main-page > .key-text-4 {
+    margin-top:1300px;
+}
+/* 메인 페이지 - 키 텍스트5 */
+.main-page > .key-text-5 {
+    margin-top:1300px;
+}
+
+/* 메인 페이지 - 타이틀 박스 */
+.main-page > .title-box {
+    width:594.14px;
+    height:134px;
+}
+
+.main-page > .title-box > .subject {
+    display:block;
+    width:65%;
+    padding-top:10px;
+    border-top:1px solid black;
+}
+
+.main-page > .title-box > .subject > .text {
+    display:inline-block;
+}
+
+.main-page > .title-box > .subject > .text > span {
+    font-size: 16px;
+    letter-spacing:-0.5px;
+}
+
+.main-page > .title-box > .subject > .text:last-child {
+    display:block;
+    padding-top:98px;
+}
+
+.main-page > .title-box > .subject > .text:last-child > span {
+    font-size:22px;
+}
+
+/* 메인 페이지 - next text */
+.main-page > .next-text > .text {
+    white-space:nowrap;
+    font-size:22px;
+    font-weight:bold;
+    line-height: 38px;
+}
+
+/* 메인 페이지 - 버튼 : 더 알아보기 */
+.main-page > .btn-hover {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 41px;
+    line-height: 41px;
+    background-color: #000;
+    font-size: 12px;
+    color: #fff;
+    cursor:pointer;
+    margin-top:50px;
+}
+
+.main-page > .btn-hover > a > span {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+
+.main-page > .btn-hover > a > span::after {
+    display: block;
+    content:"→";
+    width: 20px;
+    height: 11px;
+    position: absolute;
+    top: 13%;
+    right: 16px;
+    transform: translateY(-50%);
+    transition:all 0.3s;
+}
+
+.main-page > .btn-hover:hover > a > span {
+    color:black;
+    background-color:#FFFFFF;
+    transition:all 0.3s;
+}
+
+
+/* 하단 페이지 */
+.bottom-page {
+    margin-top:1300px;
+}
+
+/* 하단 페이지 - 키 텍스트6 */
+.bottom-page > .key-text {
+    display: block;
+    font-weight: bold;
+    padding-top: 102px;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    font-size: 56px;
+    line-height:84px;
+    margin-left:5%;
+}
+
+/* 하단 페이지 - 타이틀 박스 */
+.bottom-page > .title-box {
+    width:300px;
+    display:inline-block;
+    float:right;
+}
+
+.bottom-page > .title-box > .subject {
+    display:block;
+    padding-top:10px;
+    width:90%;
+    border-top:1px solid black;
+}
+
+.bottom-page > .title-box > .subject > .text > span {
+    font-size: 16px;
+    letter-spacing:-0.5px;
+    white-space:nowrap;
+}
+
+.bottom-page > .title-box > .subject > .text:last-child {
+    display:block;
+    padding-top:98px;
+}
+
+.bottom-page > .title-box > .subject > .text:last-child > span {
+    font-size:22px;
+}
+
+/* 하단 페이지 - 타이틀 박스 이미지 */
+.bottom-page > .title-box > .img-box {
+    width:90%;
+    margin-top:15px;
+}
+
+/* 푸터 */
+.footer {
+    margin-top:300px;
+    margin-left:100px;
+    font-size:14px;
+}
+
+/* 푸터 - 푸터 메뉴 */
+.footer > .footer-menu > .footer-menu-box {
+    margin-right:102px;
+}
+.footer > .footer-menu > .footer-menu-box > .dep1 > a {
+    font-weight:bold;
+}
+
+.footer > .footer-menu > .footer-menu-box > ul > li {
+    margin:10px 0;
+}
+
+.footer > .footer-menu > .footer-menu-box > .dep1 > a,
+.footer > .footer-menu > .footer-menu-box > ul > li > a {
+    position:relative;
+}
+
+
+.footer > .footer-menu > .footer-menu-box > .dep1 > a::after,
+.footer > .footer-menu > .footer-menu-box > ul > li > a::after {
+    content:"";
+    position:absolute;
+    background-color:black;
+    bottom:1px;
+    left:0;
+    width:0;
+    height:1px;
+    transition:width 0.3s;
+}
+
+.footer > .footer-menu > .footer-menu-box > .dep1 > a:hover::after,
+.footer > .footer-menu > .footer-menu-box > ul > li > a:hover::after {
+    width:100%;
+}
+
+
+/* 푸터 - 카피라이트 */
+.footer > .foot-copy-etc > .foot-copy {
+    margin-top:100px;
+}
+
+.footer > .foot-copy-etc > .foot-copy > .dep1 {
+    font-weight:bold;
+    font-size:16px;
+}
+
+.footer > .foot-copy-etc > .foot-copy > .dep2 {
+    font-size:11px;
+}
+
+.footer > .foot-copy-etc > .foot-copy > .dep1 > a {
+    position:relative;
+}
+
+.footer > .foot-copy-etc > .foot-copy > .dep1 > a::after {
+    content:"";
+    position:absolute;
+    background-color:black;
+    bottom:1px;
+    left:0;
+    width:0;
+    height:1px;
+    transition:width 0.3s;
+}
+
+.footer > .foot-copy-etc > .foot-copy > .dep1 > a:hover::after {
+    width:100%;
+}
+
+/* 푸터 - etc */
+.footer > .foot-copy-etc > .foot-etc > .dep1 {
+    position:absolute;
+    right:100px;
+}
+
+.footer > .foot-copy-etc > .foot-etc-1 > .dep1 {
+    right:200px;
+}
+
+.footer > .foot-copy-etc > .foot-etc > .dep1 > div > a {
+    font-size:11px;
+    letter-spacing:0.8px;
+    position:relative;
+} 
+
+.footer > .foot-copy-etc > .foot-etc > .dep1 > div > a::after {
+    content:"";
+    position:absolute;
+    background-color:black;
+    bottom:1px;
+    left:0;
+    width:0;
+    height:1px;
+    transition:width 0.3s;
+}
+
+.footer > .foot-copy-etc > .foot-etc > .dep1 > div > a:hover::after {
+    width:100%;
+}
+
+.footer > .foot-copy-etc > .foot-copy {
+    margin-bottom:-40px;
+}
+.footer > .foot-copy-etc > .foot-etc > * {
+    margin-bottom:150px;
+}
+
+/* 레이어 패밀리 시작*/
+.layer-family {
+    user-select:none;
+    position:fixed;
+    top:0;
+    left:-1920px;
+    width:1920px;
+    height:100%;
+    background-color:white;
+    transition:left cubic-bezier(.17,.67,.83,.67) 0.8s;
+}
+
+.layer-family.active {
+    left:0;
+}
+
+/* 레이어 패밀리 - 목록 */
+.layer-family .inner > ul {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    width: 50%;
+    margin-top: 100px;
+}
+
+.layer-family .inner > ul > li > a {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 58px;
+    font-weight: bold;
+    word-break: keep-all;
+    line-height:60px;
+}
+
+.layer-family .inner > ul > li {
+    margin-top: 25px;
+}
+
+.layer-family .inner li a::before {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 0;
+    height: 6px;
+    background: #000;
+    margin-right: 0;
+    margin-left: 65px;
+    transition: 0.2s;
+}
+
+.layer-family .inner li a:hover::before {
+    width: 40px;
+    margin-right: 27px;
+}
+
+/* 닫기 버튼 */
+.btn-family-close {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    cursor:pointer;
+    z-index:1;
+}
+
+.btn-family-close::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    transform:rotate(45deg);
+}
+
+.btn-family-close::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    transform:rotate(-45deg);
+}
+
+/* head - 제목 1 */
+.head > h1 {
+    position: fixed;
+    top: 15px;
+    left: 115px;
+    font-size:24px;
+}
+
+/* 오픈 버튼 시작 */
+.btn-family {
+    top:45px;
+    left:55px;
+    width:10px;
+    height:10px;
+    position:fixed;
+    cursor:pointer;
+}
+
+
+.btn-family > .btn-open > div {
+    width:40%;
+    height:40%;
+    background-color:black;
+    position:absolute;
+    transition:all .1s;
+}
+
+.btn-family > .btn-open > div:nth-child(1) {
+    top:-20%;
+    left:-20%;
+}
+
+.btn-family > .btn-open > div:nth-child(2) {
+    margin-top:80%;
+    bottom:-20%;
+    left:-20%;
+}
+
+.btn-family > .btn-open > div:nth-child(3) {
+    margin-left:80%;
+    top:-20%;
+    right:-20%;
+}
+
+.btn-family > .btn-open > div:nth-child(4) {
+    margin-top:80%;
+    margin-left:80%;
+    bottom:-20%;
+    right:-20%;
+}
+
+.btn-family:hover > .btn-open > div:nth-child(1) {
+    top:10%;
+    left:10%;
+    margin:0;
+}
+
+.btn-family:hover > .btn-open > div:nth-child(2) {
+    bottom:10%;
+    left:10%;
+    margin-top:0;
+}
+
+.btn-family:hover > .btn-open > div:nth-child(3) {
+    top:10%;
+    right:10%;
+    margin-left:0;
+}
+
+.btn-family:hover > .btn-open > div:nth-child(4) {
+    bottom:10%;
+    right:10%;
+    margin-top:0;
+    margin-left:0;
+}
+
+/* 우측 사이드 바 */
+.side-bar {
+    position:fixed;
+    top:37px;
+    right:55px;
+}
+
+.side-bar > ul > li > a {
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;    
+}
+.side-bar > ul > li > a::after {
+    content:"";
+    position:absolute;
+    background-color:black;
+    bottom:0;
+    left:0;
+    width:0;
+    height:2.5px;
+    transition:width 0.3s;
+}
+
+.side-bar > ul > li > a:hover::after {
+    width:100%;
+}
+
+/* 네비 박스 - 네비 */
+.nav-box {
+    position:absolute;
+    width: 100%;
+    top:25px;
+}
+
+.nav-box > .nav {
+    position: relative;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    color:#aaaaaa;
+}
+
+.nav-box > .nav > div {
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.nav-box > .nav > div:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav-box > .nav > div > a > span {
+    display: block;
+    position:relative;
+}
+
+
+.nav-box > .nav > div > a > span::after {
+    content:"";
+    position:absolute;
+    background-color:#aaaaaa;
+    bottom:-1px;
+    left:0;
+    width:0;
+    height:2px;
+    transition:width 0.3s;
+}
+
+.nav-box > .nav > div > a > span:hover::after {
+    width:100%;
+}
+
+/* 이미지 박스 - 이미지 1 */
+.img-box-1 > img {
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    width:70%;
+}
+
+/* 이미지 박스 - 이미지 2 */
+.img-box-2 > img {
+    position:absolute;
+    top:213%;
+    left:0;
+    max-width:1920px;
+    z-index:-1;
+}
+
+/* 이미지 박스 - 이미지 3 */
+.img-box-3 > img {
+    position:absolute;
+    top:439%;
+    left:0;
+    max-width:1920px;
+    z-index:-1;
+}
+
+/* 이미지 박스 - 이미지 4 */
+.img-box-4 > img {
+    position:absolute;
+    top: 663%;
+    left:0;
+    max-width:1920px;
+    z-index:-1;
+}
