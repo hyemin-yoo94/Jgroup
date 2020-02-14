@@ -380,6 +380,10 @@ body {
     margin-right: 27px;
 }
 
+.layer-family .inner li:hover a {
+    color: aqua
+}
+
 /* 닫기 버튼 */
 .btn-family-close {
     position: relative;
@@ -425,6 +429,17 @@ body {
     cursor:pointer;
 }
 
+.btn-family::before {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    left: -5px;
+    content: "";
+    display: block;
+    background-color: aqua;
+}
+
 
 .btn-family > .btn-open > div {
     width:40%;
@@ -433,6 +448,7 @@ body {
     position:absolute;
     transition:all .1s;
 }
+
 
 .btn-family > .btn-open > div:nth-child(1) {
     top:-20%;
@@ -588,7 +604,7 @@ body {
 /* 이미지 박스 - 이미지 4 */
 .img-box-4 > img {
     position:absolute;
-    top: 663%;
+    top: 663.6%;
     left:0;
     max-width:1920px;
     z-index:-1;
